@@ -1,10 +1,18 @@
 <?php
 
 /**
+ * FileSystem class
  * 
- * 
+ * @see class to store and manipulate data in shared memory on server side to provide availability of store global vars.
+ * @author Juraj Puchký
+ * @author Jan Biniok <jan@biniok.net>
  */
-class FileSystem {
+
+namespace \hamiyoca\server\services;
+
+class FileSystem implements FileSystem {
+	public $lastStatus = 
+	
     static function mopen($myFile, $mode) {
         for ($i = 1; $i <= 10; $i++) {
             try {

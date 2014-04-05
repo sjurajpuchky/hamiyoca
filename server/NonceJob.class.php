@@ -14,6 +14,7 @@ class NonceJob {
 	public $nonceHiLimit = 0xFFFFFFFF;
 	public $nonceMaximumParts = 0xFFFF;
 	public $nonceRange = array();
+	public $nonceResults = array();
 	
 	function _construct($to = 0, $from = 0, $numberOfWorkers = 0) {
 		

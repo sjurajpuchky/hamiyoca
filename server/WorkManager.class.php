@@ -3,7 +3,7 @@
 class WorkManager {
 	private $minimumWorkersForInitiateJob;
 	private $clients;
-	private $jobs=array();
+	private $job;
 	
 	function _construct($minimumWorkersForInitiateJob = 0) {
 		if(isset($_SERVER['hamiyoca_WorkManager'])) {
@@ -14,10 +14,14 @@ class WorkManager {
 	}
 	
 	public function join() {
-		$_SESSION[""]
+		$this->clients++;
 	}
 	
 	public function initiate() {
+		
+	}
+	
+	private function updateState() {
 		
 	}
 	
