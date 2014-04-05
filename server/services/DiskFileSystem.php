@@ -10,6 +10,8 @@
 namespace \hamiyoca\server\services;
 
 class FileSystem implements FileSystem {
+	 public $lastStatus = FileSystemStatus::NONE;
+	
 	 function open($fileName, $mode) {
 	 	
 	 }
