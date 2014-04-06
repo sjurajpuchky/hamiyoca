@@ -11,10 +11,38 @@
 namespace \hamiyoca\server\services;
 
 class FileSystem implements FileSystem {
-	public $lastStatus = FileSystemStatus::NONE;
+	public  $lastStatus = FileSystemStatus::NONE;
+	private $objects        = array();
+	private $fileSystemSize = 0;
+	private $rootDir;
+		
+	 function create($fileName) {
+	 	
+	 }
 	
-	function open($fileName, $mode) {
+	function file_exists($fileName) {
 		 
+	}
+	
+	function file_size($fileName) {
+		 
+	}
+			
+	function open($fileName, $mode) {
+		switch($mode) {
+			case "c":
+				break;
+			case "r":
+				break;
+			case "w":
+				break;
+			case "rw":
+				break;
+			case "a":
+				break
+			default:
+				throw new Excpetion("Unsupported mode");
+		}		 
 	}
 	function close($file) {
 		 

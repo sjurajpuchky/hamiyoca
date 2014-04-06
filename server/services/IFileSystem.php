@@ -7,9 +7,12 @@
  * 
  */
 
-namespace \hamiyoca\server\services;
+namespace hamiyoca\server\services;
 
 interface IFileSystem {
+	 function create($fileName);
+	 function file_exists($fileName);
+	 function file_size($fileName);
 	 function open($fileName, $mode);
 	 function close($file);
 	 function read($file);

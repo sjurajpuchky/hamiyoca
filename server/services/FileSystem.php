@@ -6,7 +6,7 @@
  * @author Juraj Puchký
  */
 
-namespace \hamiyoca\server\services;
+namespace hamiyoca\server\services;
 
 class FileSystem implements IFileSystem {
 	

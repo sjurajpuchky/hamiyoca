@@ -1,8 +1,10 @@
 <?php
-namespace\hamiyoca\server\services;
+
+namespace hamiyoca\server\services;
 
 /**
  * FileSystemStatus
+ * 
  * @see FileSystemStatus enum class
  */
 abstract class FileSystemStatus {
